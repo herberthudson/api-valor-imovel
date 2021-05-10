@@ -13,3 +13,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 -   add test packages, init test config and initial example
 -   create initial tests
 -   swagger documentation
+-   github CI
