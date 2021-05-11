@@ -24,6 +24,7 @@ const options = {
 const specs = swaggerJsDoc(options)
 
 const app = express()
+app.use(express.json())
 const port = process.env.PORT || 4000
 
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(specs))
