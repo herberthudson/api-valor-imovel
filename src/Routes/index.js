@@ -1,6 +1,6 @@
 const { Router } = require('express')
 const ImovelValueController = require('../Controllers/ImovelValueController')
-const { validateMiddleware } = require('../utils/validateRequest')
+const { validateMiddleware } = require('../utils/validate')
 
 const imovelValueRouter = Router()
 const imovelValue = new ImovelValueController()
