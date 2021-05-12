@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
+-   middleware to validate request body
 -   create controller for post request
 -   github CI
 -   swagger documentation
