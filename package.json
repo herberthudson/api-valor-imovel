@@ -1,6 +1,6 @@
 {
 	"name": "api-valor-imovel",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Api que recebe a quantidade de metros e calcula o valor do imovel",
 	"author": "Herbert Hudson",
 	"keywords": [
