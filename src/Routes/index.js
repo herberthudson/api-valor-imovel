@@ -1,5 +1,6 @@
 const { Router } = require('express')
 const ImovelValueController = require('../Controllers/ImovelValueController')
+const { validateMiddleware } = require('../utils/validate')
 
 const imovelValueRouter = Router()
 const imovelValue = new ImovelValueController()
@@ -67,6 +68,8 @@ const imovelValue = new ImovelValueController()
  *               items:
  *                 $ref: '#/components/schemas/ImovelResponse'
  */
-imovelValueRouter.post('/', (req, res) => imovelValue.post(req, res))
+imovelValueRouter.post('/', validateMiddleware, (req, res) =>
+	imovelValue.post(req, res),
+)
 
 module.exports = imovelValueRouter
